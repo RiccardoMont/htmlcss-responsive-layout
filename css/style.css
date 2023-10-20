@@ -1,7 +1,218 @@
+/*Inizio general settings*/
+
 *{
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Fine general settings*/
 
+/*Inizio colonne in dodicesimi*/
+.col-1{
+    width: calc(100%/12);
+}
+.col-2{
+    width: calc((100%/12)*2);
+}
+.col-3{
+    width: calc((100%/12)*3);
+}
+.col-4{
+    width: calc((100%/12)*4);
+}
+.col-5{
+    width: calc((100%/12)*5);
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: calc((100%/12)*7);
+}
+.col-8{
+    width: calc((100%/12)*8);
+}
+.col-9{
+    width: calc((100%/12)*9);
+}
+.col-10{
+    width: calc((100%/12)*10);
+}
+.col-11{
+    width: calc((100%/12)*11);
+}
+.col-12{
+    width: 100%;
+}
+/*Fine colonne in dodicesimi*/
+
+/*Inizio root*/
+
+:root {
+    --bg-nav-lightblue: #0084fd;
+    --text-lightblue: #0787fd;
+    --bg-text-verylightblue: #b5ddff;
+    --bg-section-white: #ffffff;
+    --text-white: #fdfdff;
+    --bg-section-violet: #9792e4;
+    --text-black: #111111;
+    --free-orange: #fdc15f;
+    --bg-footer-softblack: #333333;
+}
+
+/*Fine root*/
+
+/*Inizio utility*/
+.container{
+    width: 70%;
+    max-width: 1152px;
+    margin: auto;
+}
+
+.row{
+    display:flex;
+}
+
+
+/*Fine utility*/
+
+/*Inizio debug*/
+/*Inizio d-header*/
+.debug nav {
+    background-color: var(--bg-nav-lightblue);
+}
+
+.debug nav .row{
+    justify-content: space-between;
+}
+
+.debug nav .logo {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+}
+
+.debug nav .menu {
+    height: 50px;
+    background-color: red;
+}
+/*Fine d-header*/
+/*Inizio d-main*/
+/*Inizio section demo*/
+
+.debug .demo .row {
+    flex-wrap: wrap;
+}
+
+.debug .demo .col-8{
+    background-color: blue;
+    height: 300px;
+}
+
+.debug .demo .col-4{
+    background-color: orange;
+    height: 300px;
+    border: 1px dashed black;
+}
+
+.debug .demo{
+    background-color: var(--bg-section-white);
+}
+
+/*Fine section demo*/
+/*Inizio section strategic*/
+
+.debug .strategic {
+    background-color: var(--bg-section-violet);
+}
+
+.debug .strategic .col-6{
+    height: 500px;
+    border: 1px dashed black;
+    background-color: brown;
+}
+/*Fine section strategic*/
+/*Inizio section partners*/
+
+.debug .partners{
+    background-color: var(--bg-section-white);
+}
+
+.debug .partners .texts {
+    height: 300px;
+    background-color:greenyellow;
+}
+
+.debug .partners .card{
+    height: 250px;
+    background-color: peru;
+    border: 1px dashed black;
+}
+
+/*Fine section partners*/
+/*Inizio section benefits*/
+
+.debug .benefits {
+    background-color: var(--bg-section-violet);
+}
+
+.debug .benefits .row {
+    flex-wrap: wrap;
+}
+
+.debug .benefits .col-4 {
+    height: 300px;
+    background-color: crimson;
+    border:1px dashed black;
+}
+
+/*Fine section benefits*/
+/*Inizio section us*/
+
+.debug .us {
+    background-color: var(--bg-section-white);
+}
+
+.debug .us .col-8{
+    height:500px;
+    background-color: coral;
+}
+
+.debug .us .col-4{
+    height:500px;
+    background-color:violet;
+}
+/*Fine section us*/
+/*Inizio section free*/
+
+.debug .free {
+    background-color: var(--bg-section-violet);
+}
+
+.debug .free .container{
+    width: 50%;
+}
+
+.debug .free .content{
+    height: 500px;
+    background-color: purple;
+}
+/*Fine section free*/
+/*Fine d-main*/
+/*Inizio d-footer*/
+
+.debug .site-footer{
+    background-color: var(--bg-footer-softblack);
+}
+
+.debug .site-footer .container {
+    width: 50%;
+}
+
+.debug .site-footer .content{
+    height: 150px;
+    background-color: orange;
+}
+/*Fine d-footer*/
+/*Fine debug*/
