@@ -74,8 +74,109 @@
     display:flex;
 }
 
+.flex{
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.aling-items-center{
+    align-items: center;
+}
+
+
+
+/*Inizio typography*/
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.size-14{
+    font-size: 14px;
+}
+/*Fine typography*/
+
+/*Inizio paddings*/
+
+.p-bt-05{
+    padding: 0.5rem 0;
+}
+
+/*Fine paddings*/
+
+
+
+/*Inizio Colors*/
+
+.color-white{
+    color: var(--text-white);
+}
+
+.color-black{
+    color: var(--text-black);
+}
+
+/*Fine Colors*/
 
 /*Fine utility*/
+/*Inizio header*/
+
+nav{
+    background-color: var(--bg-nav-lightblue);
+}
+
+nav .logo {
+    cursor:pointer;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav button{
+    padding: 0.4rem 0.5rem;
+    border-radius: 1rem;
+    border:0;
+    cursor: pointer;   
+}
+
+
+
+
+/*Fine header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Inizio debug*/
 /*Inizio d-header*/
