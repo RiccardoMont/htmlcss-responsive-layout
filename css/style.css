@@ -130,6 +130,10 @@
     right: 40px;
 }
 
+.align-self-end{
+    align-self: end;
+}
+
 
 
 /*Inizio typography*/
@@ -153,8 +157,16 @@
     font-size: 18px;
 }
 
+.size-24{
+    font-size: 24px;
+}
+
 .weight-600{
     font-weight: 600;
+}
+
+.italic{
+    font-style: italic;
 }
 
 .text-center{
@@ -177,6 +189,10 @@
     padding: 1rem;
 }
 
+.p-bt1-rl2{
+    padding: 1rem 2rem;
+}
+
 .p-bt-05{
     padding: 0.5rem 0;
 }
@@ -187,6 +203,14 @@
 
 .p-top-1{
     padding-top: 1rem;
+}
+
+.p-bt-5{
+    padding: 5rem 0;
+}
+
+.p-10px{
+    padding: 10px;
 }
 
 .p-right-10px{
@@ -219,16 +243,31 @@
     border-right: 10px;
 }
 
+.border-radius-2{
+    border-radius: 2rem;
+}
+
+.border-radius-05{
+    border-radius: 50%;
+}
 
 /*Fine borders*/
 
-
-
+/*Inizio width*/
+.width-28{
+    width: 28%;
+}
 
 .min-width-120px{
     min-width: 120px;
 }
+/*Fine width*/
 
+/*Inizio gap*/
+.gap-3{
+    gap: 3rem;
+}
+/*Fine gap*/
 
 /*Inizio Colors*/
 
@@ -244,6 +283,13 @@
     color: var(--text-lightblue);
 }
 
+.bg-color-white{
+    background-color: var(--bg-section-white);
+}
+
+.bg-color-violet{
+    background-color: var(--bg-section-violet);
+}
 
 /*Fine Colors*/
 
@@ -298,6 +344,19 @@ nav button{
 }
 
 /*Fine section demo*/
+/*Inizio section strategic*/
+
+.strategic{
+    background-color: var(--bg-section-violet);
+}
+
+.strategic .container{
+    width: 50%;
+}
+
+
+
+/*Fine section strategic*/
 
 
 
