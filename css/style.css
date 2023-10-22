@@ -110,12 +110,28 @@
     position: absolute;
 }
 
+.top-0{
+    top:0;
+}
+
 .top-20px{
     top: 20px;
 }
 
+.top-40px{
+    top: 40px;
+}
+
+.top-100px{
+    top: 100px;
+}
+
 .left-40px{
     left: 40px;
+}
+
+.left-50px{
+    left: 50px;
 }
 
 .bot-0{
@@ -192,6 +208,10 @@
     line-height: 2;
 }
 
+.line-height-3{
+    line-height: 3;
+}
+
 /*Fine typography*/
 
 /*Inizio paddings*/
@@ -242,6 +262,10 @@
 
 .p-top-1{
     padding-top: 1rem;
+}
+
+.p-top-3{
+    padding-top: 3rem;
 }
 
 .p-10px{
@@ -306,6 +330,10 @@
 /*Inizio width*/
 .width-28{
     width: 28%;
+}
+
+.width-70{
+    width: 70%;
 }
 
 .min-width-120px{
@@ -455,7 +483,27 @@ nav button{
     background-color: var(--bg-section-violet);
 }
 /*Fine section benefits*/
+/*Inizio Us*/
 
+.us{
+    background-color: var(--bg-section-white);
+}
+
+.about{
+    background-image: url(/img/about.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+
+.us button{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border:0;
+    cursor: pointer;
+    background-color: var(--bg-section-violet);
+}
+
+/*Fine Us*/
 
 
 
