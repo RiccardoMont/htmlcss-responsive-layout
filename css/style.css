@@ -78,34 +78,156 @@
     display: flex;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
 .justify-content-between{
     justify-content: space-between;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
 }
 
 .aling-items-center{
     align-items: center;
 }
 
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.top-20px{
+    top: 20px;
+}
+
+.left-40px{
+    left: 40px;
+}
+
+.bot-0{
+    bottom: 0;
+}
+
+.bot-20px{
+    bottom: 20px;
+}
+
+.right-40px{
+    right: 40px;
+}
+
 
 
 /*Inizio typography*/
 .montserrat{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'montserrat', sans-serif;
+}
+
+.size-12{
+    font-size: 12px;
 }
 
 .size-14{
     font-size: 14px;
 }
+
+.size-16{
+    font-size: 16px;
+}
+
+.size-18{
+    font-size: 18px;
+}
+
+.weight-600{
+    font-weight: 600;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.line-height-1-5{
+    line-height: 1.5;
+}
+
+.line-height-2{
+    line-height: 2;
+}
+
 /*Fine typography*/
 
 /*Inizio paddings*/
+
+.p-1{
+    padding: 1rem;
+}
 
 .p-bt-05{
     padding: 0.5rem 0;
 }
 
-/*Fine paddings*/
+.p-bt-1{
+    padding: 1rem 0;
+}
 
+.p-top-1{
+    padding-top: 1rem;
+}
+
+.p-right-10px{
+    padding-right: 10px;
+}
+
+/*Fine paddings*/
+/*Inizio margins*/
+
+.m-bt-3{
+    margin: 3rem 0;
+}
+
+/*Fine margins*/
+/*Inizio borders*/
+
+.border-t-10px{
+    border-top: 10px;
+}
+
+.border-l-10px{
+    border-left: 10px;
+}
+
+.border-b-10px{
+    border-bottom: 10px;
+}
+
+.border-r-10px{
+    border-right: 10px;
+}
+
+
+/*Fine borders*/
+
+
+
+
+.min-width-120px{
+    min-width: 120px;
+}
 
 
 /*Inizio Colors*/
@@ -117,6 +239,11 @@
 .color-black{
     color: var(--text-black);
 }
+
+.color-lightblue{
+    color: var(--text-lightblue);
+}
+
 
 /*Fine Colors*/
 
@@ -146,10 +273,37 @@ nav button{
     cursor: pointer;   
 }
 
-
-
-
 /*Fine header*/
+/*Inizio main*/
+
+/*Inizio section demo*/
+
+.demo {
+    background-color: var(--bg-section-white);
+}
+
+.demo .card{
+    background-color: var(--bg-text-verylightblue);
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: var(--bg-section-white);
+}
+
+.demo button{
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+    border:0;
+    cursor: pointer;
+    background-color: var(--bg-nav-lightblue);
+}
+
+/*Fine section demo*/
+
+
+
+
+
+/*Fine main*/
 
 
 
