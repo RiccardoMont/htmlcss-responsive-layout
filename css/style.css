@@ -114,10 +114,6 @@
     position: absolute;
 }
 
-.top-0{
-    top:0;
-}
-
 .top-20px{
     top: 20px;
 }
@@ -126,16 +122,9 @@
     top: 40px;
 }
 
-.top-100px{
-    top: 100px;
-}
 
 .left-40px{
     left: 40px;
-}
-
-.left-50px{
-    left: 50px;
 }
 
 .bot-0{
@@ -276,10 +265,6 @@ a{
     padding-bottom: 5rem;
 }
 
-.p-top-1{
-    padding-top: 1rem;
-}
-
 .p-top-3{
     padding-top: 3rem;
 }
@@ -305,10 +290,6 @@ a{
 
 .m-bt-05{
     margin: 0.5rem 0;
-}
-
-.m-b-3{
-    margin-bottom: 3rem;
 }
 
 .m-t-1{
@@ -356,7 +337,13 @@ a{
     min-width: 120px;
 }
 /*Fine width*/
+/*Inizio height*/
 
+.height-100{
+    height: 100%;
+}
+
+/*Fine height*/
 /*Inizio gap*/
 .gap-3{
     gap: 3rem;
@@ -463,24 +450,6 @@ nav button{
     background-color: var(--bg-section-white);
 }
 
-.testimonial-1{
-    background-image: url(/img/testimonial1.jpg);
-    background-position-x: center;
-    background-size: cover;
-}
-
-.testimonial-2{
-    background-image: url(/img/testimonial2.jpg);
-    background-position-x: center;
-    background-size: cover;
-}
-
-.testimonial-3{
-    background-image: url(/img/testimonial3.jpg) ;
-    background-position-x: center;
-    background-size: cover;
-}
-
 /*Fine section partners*/
 /*Inizio section benefits*/
 
@@ -509,10 +478,14 @@ nav button{
     background-color: var(--bg-section-white);
 }
 
-.about{
-    background-image: url(/img/about.jpg);
-    background-position-x: center;
-    background-size: cover;
+.circle{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.object-fit-cover{
+    object-fit: cover;
 }
 
 .us button{
