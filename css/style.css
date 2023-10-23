@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
 /*Fine general settings*/
 
 /*Inizio colonne in dodicesimi*/
@@ -548,15 +551,33 @@ nav .hamburger{
 
 /*Inizio media query max-width-480px*/
 
+
+
 @media screen and (max-width: 480px) {
-/*Inizio nav*/
-    .col-8{
-        width: 400px;
+    
+    .col-4{
+        width: 100%;
     }
 
-    .col-4{
-        width: 400px;
+    .col-5{
+        width: 100%;
     }
+
+    .col-6{
+        width: 100%;
+    }
+
+    .col-7{
+        width: 100%;
+    }
+
+    .col-8{
+        width: 100%;
+    }
+
+
+    /*Inizio nav*/
+    
 
     nav .menu{
         display: none;
@@ -590,7 +611,11 @@ nav .hamburger{
     }
 
     .demo .width-41{
-        width: 400px;
+        width: 100%;
+    }
+
+    .demo .width-25{
+        width: 100%;
     }
 
     .demo .position-absolute{
@@ -630,21 +655,84 @@ nav .hamburger{
         gap:2rem;
     }
 
-    .strategic .col-6{
-        width: 100%;
-    }
-
-    .strategic .col-5{
-        width: 100%;
-    }
-
     .strategic .align-self-end{
         align-self: unset;
     }
 /*Fine strategic*/
 /*Inizio partners*/
 
+    .partners .card{
+    flex-wrap: wrap;
+    }
+
+    .partners .justify-content-between{
+    justify-content: center;
+    }
+
+    .partners .quotation{
+    text-align: center;
+    }
+
+    .partners .quotation .p-10px{
+    padding: 0;
+    }
+
 /*Fine partners*/
+/*Inizio benefits*/
+
+    #benefits{
+    text-align: center;
+    }
+
+    .benefits .border-b-10px{
+        border: 0;
+    }
+
+    .benefits .border-t-10px{
+        border: 0;
+    }
+
+    .benefits .border-l-10px{
+        border: 0;
+    }
+
+    .benefits .border-r-10px{
+        border: 0;
+    }
+
+    .benefits .card{
+        background-color: var(--bg-section-white);
+        border-radius: 2rem;
+        border: 10px solid var(--bg-section-violet);
+    }
+    
+
+/*Fine benefits*/
+/*Inizio us*/
+
+    .us .row{
+    flex-direction: column;
+    }
+
+    .us .row .align-items-center{
+    align-items: flex-start;
+    }
+
+    .us .circle{
+    position:relative
+    }
+
+    .us .circle .top-40px {
+        top: -10px;
+    }
+
+    .us .circle .right-40px {
+        right: 15px;
+    }
+
+/*Fine us*/
+/*Inizio free*/
+/*Fine free*/
 }
 /*Fine media query min-width-480px*/
 
