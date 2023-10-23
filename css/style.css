@@ -121,8 +121,8 @@
     top: 20px;
 }
 
-.top-40px{
-    top: 40px;
+.top--10px{
+    top: -10px;
 }
 
 
@@ -136,6 +136,10 @@
 
 .bot-20px{
     bottom: 20px;
+}
+
+.right-15px{
+    right: 15px;
 }
 
 .right-40px{
@@ -332,10 +336,6 @@ a{
 /*Fine borders*/
 
 /*Inizio width*/
-
-.width-16{
-    width: 16%;
-}
 
 .width-25{
     width: 25%;
@@ -585,8 +585,8 @@ nav .hamburger{
 
     nav .hamburger{
         display: block;
-
     }
+
 /*Fine nav*/
 /*Inizio demo*/
 
@@ -706,7 +706,6 @@ nav .hamburger{
         border: 10px solid var(--bg-section-violet);
     }
     
-
 /*Fine benefits*/
 /*Inizio us*/
 
@@ -722,19 +721,55 @@ nav .hamburger{
     position:relative
     }
 
-    .us .circle .top-40px {
-        top: -10px;
-    }
-
-    .us .circle .right-40px {
-        right: 15px;
-    }
-
 /*Fine us*/
 /*Inizio free*/
 /*Fine free*/
 }
 /*Fine media query min-width-480px*/
+
+/*Inizio media query min-width-768px*/
+
+@media screen and (max-width: 768px) {
+
+
+/*Inizio nav*/
+    nav .menu{
+        display: none;
+    }
+
+    nav .hamburger{
+        display: block;
+
+    }
+/*Fine nav*/
+
+/*Inizio demo*/
+
+    .demo .get{
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem 1rem 0 1rem;
+        justify-content: space-between;
+    }
+
+    .demo .get .width-41{
+        width: 270px;
+    }
+
+    .demo .get .position-absolute{
+        position:static;
+    }
+
+    .demo .get .width-25{
+        width: 200px;
+    }
+
+    .demo .clean .justify-content-evenly{
+        justify-content: flex-start;
+    }
+
+/*Fine demo*/
+}
 
 
 
