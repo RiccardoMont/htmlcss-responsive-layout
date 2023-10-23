@@ -98,7 +98,7 @@
     justify-content: center;
 }
 
-.aling-items-center{
+.align-items-center{
     align-items: center;
 }
 
@@ -329,12 +329,29 @@ a{
 /*Fine borders*/
 
 /*Inizio width*/
+
+.width-16{
+    width: 16%;
+}
+
+.width-25{
+    width: 25%;
+}
+
 .width-28{
     width: 28%;
 }
 
+.width-41{
+    width: 41%;
+}
+
 .width-70{
     width: 70%;
+}
+
+.width-100{
+    width: 100%;
 }
 
 .min-width-120px{
@@ -412,6 +429,10 @@ nav button{
     cursor: pointer;   
 }
 
+nav .hamburger{
+    display: none;
+}
+
 /*Fine header*/
 /*Inizio main*/
 
@@ -454,6 +475,12 @@ nav button{
     background-color: var(--bg-section-white);
 }
 
+.circle{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+}
+
 /*Fine section partners*/
 /*Inizio section benefits*/
 
@@ -480,12 +507,6 @@ nav button{
 
 .us{
     background-color: var(--bg-section-white);
-}
-
-.circle{
-    width: 230px;
-    height: 230px;
-    overflow: hidden;
 }
 
 .object-fit-cover{
@@ -515,6 +536,7 @@ nav button{
     background-color: var(--bg-section-white);
 }
 /*Fine free*/
+/*Fine main*/
 /*Inizio footer*/
 
 .site-footer{
@@ -524,7 +546,108 @@ nav button{
 /*Fine footer*/
 
 
-/*Fine main*/
+/*Inizio media query max-width-480px*/
+
+@media screen and (max-width: 480px) {
+/*Inizio nav*/
+    .col-8{
+        width: 400px;
+    }
+
+    .col-4{
+        width: 400px;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    nav .hamburger{
+        display: block;
+
+    }
+/*Fine nav*/
+/*Inizio demo*/
+
+    .demo .row {
+        gap: 1rem;
+    }
+
+    .demo .border-b-10px{
+        border: 0;
+    }
+
+    .demo .border-t-10px{
+        border: 0;
+    }
+
+    .demo .border-l-10px{
+        border: 0;
+    }
+
+    .demo .border-r-10px{
+        border: 0;
+    }
+
+    .demo .width-41{
+        width: 400px;
+    }
+
+    .demo .position-absolute{
+        position: static;
+    }
+
+    .demo .left-40px{
+        left:0;
+    }
+
+    .demo .bot-20px{
+        bottom:0;
+    }
+
+    .demo .top-20px{
+        top:0;
+    }
+
+    .demo .right-40px{
+        right:0;
+    }
+
+    .demo .get{
+        padding: 2rem 2rem 0 2rem;
+        justify-content: center;
+        gap: 20px;
+    }
+/*Fine demo*/
+/*Inizio strategic*/
+
+    .strategic .container{
+        width: 70%;
+    }
+
+    .strategic .row{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .strategic .col-6{
+        width: 100%;
+    }
+
+    .strategic .col-5{
+        width: 100%;
+    }
+
+    .strategic .align-self-end{
+        align-self: unset;
+    }
+/*Fine strategic*/
+/*Inizio partners*/
+
+/*Fine partners*/
+}
+/*Fine media query min-width-480px*/
+
 
 
 
