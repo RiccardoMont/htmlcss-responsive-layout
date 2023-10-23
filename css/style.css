@@ -731,6 +731,10 @@ nav .hamburger{
 
 @media screen and (max-width: 768px) {
 
+    .container{
+        width: 90%;
+    }
+
 
 /*Inizio nav*/
     nav .menu{
@@ -745,6 +749,9 @@ nav .hamburger{
 
 /*Inizio demo*/
 
+   
+
+
     .demo .get{
         flex-direction: column;
         gap: 3rem;
@@ -753,7 +760,7 @@ nav .hamburger{
     }
 
     .demo .get .width-41{
-        width: 270px;
+        width: 400px;
     }
 
     .demo .get .position-absolute{
@@ -769,6 +776,34 @@ nav .hamburger{
     }
 
 /*Fine demo*/
+/*Inizio strategic*/
+
+    .strategic .container{
+        width: 90%;
+    }
+
+    .strategic .row{
+    flex-direction: column;
+    gap:2rem;
+    }
+
+    .strategic .align-self-end{
+    align-self: unset;
+    }
+
+    .strategic .col-6{
+        width: 100%;
+    }
+
+    .strategic .col-5{
+        width: 100%;
+    }
+
+    .strategic .size-24{
+        font-size: 50px;
+    }
+
+/*Fine strategic*/
 }
 
 
