@@ -101,6 +101,10 @@
     justify-content: center;
 }
 
+.justify-content-end{
+    justify-content: flex-end;
+}
+
 .align-items-center{
     align-items: center;
 }
@@ -152,10 +156,6 @@
 
 .vertical-align-middle{
     vertical-align: middle;
-}
-
-.aspect-ratio-1{
-    aspect-ratio: 1;
 }
 
 a{
@@ -309,22 +309,6 @@ a{
 /*Fine margins*/
 /*Inizio borders*/
 
-.border-t-10px{
-    border-top: 10px;
-}
-
-.border-l-10px{
-    border-left: 10px;
-}
-
-.border-b-10px{
-    border-bottom: 10px;
-}
-
-.border-r-10px{
-    border-right: 10px;
-}
-
 .border-radius-2{
     border-radius: 2rem;
 }
@@ -341,8 +325,8 @@ a{
     width: 25%;
 }
 
-.width-28{
-    width: 28%;
+.width-33{
+    width: 33%;
 }
 
 .width-41{
@@ -369,6 +353,15 @@ a{
 
 /*Fine height*/
 /*Inizio gap*/
+
+.gap-3px{
+    gap: 3px;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
 .gap-3{
     gap: 3rem;
 }
@@ -480,6 +473,7 @@ nav .hamburger{
 
 .circle{
     width: 230px;
+    min-width: 230px;
     height: 230px;
     overflow: hidden;
 }
@@ -549,9 +543,7 @@ nav .hamburger{
 /*Fine footer*/
 
 
-/*Inizio media query max-width-480px*/
-
-
+/*INIZIO MEDIA QUERY MAX-WIDTH-480PX*/
 
 @media screen and (max-width: 480px) {
     
@@ -575,9 +567,11 @@ nav .hamburger{
         width: 100%;
     }
 
+    .col-9{
+        width: 100%;
+    }
 
     /*Inizio nav*/
-    
 
     nav .menu{
         display: none;
@@ -643,6 +637,7 @@ nav .hamburger{
         justify-content: center;
         gap: 20px;
     }
+
 /*Fine demo*/
 /*Inizio strategic*/
 
@@ -658,15 +653,14 @@ nav .hamburger{
     .strategic .align-self-end{
         align-self: unset;
     }
+
 /*Fine strategic*/
 /*Inizio partners*/
 
     .partners .card{
     flex-wrap: wrap;
-    }
-
-    .partners .justify-content-between{
     justify-content: center;
+    overflow: hidden;
     }
 
     .partners .quotation{
@@ -684,20 +678,8 @@ nav .hamburger{
     text-align: center;
     }
 
-    .benefits .border-b-10px{
-        border: 0;
-    }
-
-    .benefits .border-t-10px{
-        border: 0;
-    }
-
-    .benefits .border-l-10px{
-        border: 0;
-    }
-
-    .benefits .border-r-10px{
-        border: 0;
+    .benefits .width-33{
+        width: 100%;
     }
 
     .benefits .card{
@@ -725,18 +707,19 @@ nav .hamburger{
 /*Inizio free*/
 /*Fine free*/
 }
-/*Fine media query min-width-480px*/
 
-/*Inizio media query min-width-768px*/
+/*FINE MEDIA QUERY MIN-WIDTH-480PX*/
 
-@media screen and (max-width: 768px) {
+/*INIZIO MEDIA QUERY MIN-WIDTH-481PX AND MAX-WIDTH-1023PX*/
+
+@media screen and (min-width: 481px) and (max-width:1023px) {
 
     .container{
         width: 90%;
     }
 
-
 /*Inizio nav*/
+
     nav .menu{
         display: none;
     }
@@ -746,7 +729,6 @@ nav .hamburger{
 
     }
 /*Fine nav*/
-
 /*Inizio demo*/
 
     .demo .get{
@@ -757,7 +739,7 @@ nav .hamburger{
     }
 
     .demo .get .width-41{
-        width: 400px;
+        width: 100%;
     }
 
     .demo .get .position-absolute{
@@ -814,14 +796,11 @@ nav .hamburger{
     .partners .quotation{
         line-height: 2;
     }
+
 /*Fine partners*/
 /*Inizio benefits*/
 
-    .benefits .griglia{
-        gap: 10px;
-    }
-
-    .benefits .col-4{
+    .benefits .width-33{
         width: 49%;
     }
 
@@ -841,32 +820,66 @@ nav .hamburger{
         border: 0;
     }
 
-    
-
 /*Fine benefits*/
+/*Inizio us*/
+
+    .us .col-7{
+        width: 55%;
+    }
+
+    .us .col-4{
+        width: 40%;
+    }
+
+    .us .justify-content-evenly{
+        justify-content: flex-start;
+    }
+
+/*INIZIO NESTING MEDIA QUERY DA 481PX A 697PX*/
+
+    @media screen and (max-width:697px) {
+
+    .us .row{
+        flex-direction: column;
+        }
+    
+        .us .row .align-items-center{
+        align-items: flex-start;
+        }
+    
+        .us .circle{
+        position:relative
+        }
+
+        .us .col-7{
+            width: 100%;
+        }
+
+        .us .col-4{
+            width: 100%;
+        }
+    }
+
+/*FINE NESTING MEDIA QUERY DA 481PX A 697PX*/
+/*Fine us*/
+/*Inizio free*/
+
+    .free .col-9{
+        width: 80%;
+    }
+
+/*Fine free*/
+/*Inizio footer*/
+
+    footer .col-9{
+        width: 80%;
+    }
+
+/*Fine footer*/
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*FINE MEDIA QUERY MIN-WIDTH-481PX AND MAX-WIDTH-1023PX*/
 
 
 
