@@ -749,9 +749,6 @@ nav .hamburger{
 
 /*Inizio demo*/
 
-   
-
-
     .demo .get{
         flex-direction: column;
         gap: 3rem;
@@ -804,6 +801,49 @@ nav .hamburger{
     }
 
 /*Fine strategic*/
+/*Inizio partners*/
+
+    .partners .texts p{
+        line-height: 2;
+    }
+
+    .partners .col-9{
+        width: 60%;
+    }
+
+    .partners .quotation{
+        line-height: 2;
+    }
+/*Fine partners*/
+/*Inizio benefits*/
+
+    .benefits .griglia{
+        gap: 10px;
+    }
+
+    .benefits .col-4{
+        width: 49%;
+    }
+
+    .benefits .border-b-10px{
+        border: 0;
+    }
+
+    .benefits .border-t-10px{
+        border: 0;
+    }
+
+    .benefits .border-l-10px{
+        border: 0;
+    }
+
+    .benefits .border-r-10px{
+        border: 0;
+    }
+
+    
+
+/*Fine benefits*/
 }
 
 
